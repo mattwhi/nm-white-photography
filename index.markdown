@@ -45,7 +45,7 @@ portfolioItemBlock:
 
 # Contact
 contactTitle: Let's talk
-contactButton: Send
+contactButton: Send message
 # Font Awesome Icons
 socialItems:
  - link: /
