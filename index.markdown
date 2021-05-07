@@ -44,7 +44,7 @@ portfolioItemBlock:
    projectTitle: West Burton Falls
 
 # Contact
-contactTitle: Let's talk
+contactTitle: contact us
 contactButton: Send message
 # Font Awesome Icons
 socialItems:
