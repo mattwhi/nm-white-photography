@@ -16,7 +16,7 @@ heroCta: Learn more
 aboutTitle: About me
 aboutContent: lorem ipsum
 aboutImage: img/nm-white-profile-image.jpeg
-aboutButton: Portfolion
+aboutButton: Portfolio
 
 # Portfolio
 
