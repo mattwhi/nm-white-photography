@@ -1,0 +1,37 @@
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>{{ page.portfolioTitle }}</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            {% for portfolioNav in page.portfolioNavBlock %}
+            <li><a href="#" data-filter=".{{ portfolioNav.filter }}">{{ portfolioNav.name }}</a></li>
+            {% endfor %}
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        {% for portfolioItem in page.portfolioItemBlock %}
+        <div class="col-sm-6 col-md-3 col-lg-3 {{ portfolioItem.category }}">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/{{ portfolioItem.category }}/{{portfolioItem.largeImage}}" title="{{portfolioItem.imageTitle}}" data-lightbox-gallery="gallery1">
+              <div class="hover-text">
+                <h4>{{ portfolioItem.projectTitle }}</h4>
+              </div>
+              <img src="img/portfolio/{{ portfolioItem.category }}/{{ portfolioItem.smallImage }}" class="img-responsive" alt="{{ portfolioItem.aimgeAltText }}"> </a> </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

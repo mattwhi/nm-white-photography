@@ -1,0 +1,39 @@
+<!-- Contact Section -->
+<div id="contact" class="text-center">
+    <div class="container">
+      <div class="section-title center">
+        <h2>{{ page.contactTitle }}</h2>
+        <hr>
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        <form name="sentMessage" id="contactForm" action="https://formspree.io/f/mnqljrye" method="POST" novalidate>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+            <p class="help-block text-danger"></p>
+          </div>
+          <div id="success"></div>
+          <button type="submit" class="btn btn-default btn-lg">{{ page.contactButton }}</button>
+        </form>
+        <div class="social">
+          <ul>{% for social in page.socialItems %}
+            <li><a href="{{ social.link }}"><i class="fa {{ social.icon }}"></i></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
