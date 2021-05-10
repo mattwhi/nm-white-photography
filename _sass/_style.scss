@@ -17,7 +17,6 @@ body {
 	color: $font-color;
 	width: 100% !important;
 	height: 100% !important;
-	background-color: $first-color;
 }
 html {
 	font-family: 'Open Sans', sans-serif;
@@ -106,4 +105,14 @@ hr {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+.image {
+		vertical-align: middle;
+		background-size: contain;
+		background-position:top;
+
 }
