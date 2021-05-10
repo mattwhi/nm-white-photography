@@ -1,0 +1,38 @@
+/* Header Section */
+header {
+	.intro-text {
+		padding-top: 250px;
+		padding-bottom: 200px;
+		}
+	.intro {
+		display: table;
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		background: no-repeat center bottom;
+		background-attachment: fixed;
+		background-position: top;
+		background-color: #e5e5e5;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		h1 {
+			color: rgba(255,255,255,0.9);
+			font-size: 64px;
+			font-weight: 600;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+		p {
+			color: rgba(255,255,255,0.8);
+			font-size: 22px;
+			margin-bottom: 40px;
+			margin-top: 20px;
+		}
+	}
+	.section-title.center {
+		padding: 10px 0 40px 0;
+	}
+}

@@ -1,0 +1,140 @@
+/* Navigation */
+#menu {
+	padding: 20px;
+	transition: all 0.8s;
+	a.navbar-brand {
+		font-size: 20px;
+		color: $font-color;
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		i.fa {
+			font-size: 18px;
+			color: $font-color;
+			vertical-align: top;
+		}
+	}
+}
+#menu.navbar-default {
+	background-color: $nav-background;
+	border-color: rgba(231, 231, 231, 0);
+	.navbar-nav {
+		>li {
+			>a {
+				text-transform: uppercase;
+				color: darken($font-color, 20%);
+				font-size: 14px;
+				letter-spacing: 1px;
+				font-weight: 500;
+				&:hover {
+					color: $font-color;
+				}
+			}
+		}
+	}
+}
+.on {
+	background-color: darken($nav-background, 50%) !important;
+	padding: 0 !important;
+}
+.navbar-default {
+	.navbar-nav {
+		>.active {
+			>a {
+				color: $font-color !important;
+				background-color: transparent;
+				&:hover {
+					color: lighten($font-color, 50%) !important;
+					background-color: transparent;
+				}
+				&:focus {
+					color: lighten($font-color, 50%) !important;
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	.navbar-toggle {
+		&:hover {
+			background-color: $font-color;
+			border-color: $font-color;
+			>.icon-bar {
+				background-color: #FFF;
+			}
+		}
+		&:focus {
+			background-color: $font-color;
+			border-color: $font-color;
+		}
+	}
+}
+.navbar-toggle {
+	border-radius: 0;
+}
+.section-title {
+	padding-bottom: 50px;
+}
+.btn-custom {
+	text-transform: uppercase;
+	color: #414a52;
+	background-color: $font-color;
+	border: 0;
+	padding: 14px 20px;
+	margin: 0;
+	font-size: 16px;
+	border-radius: 0;
+	margin-top: 20px;
+	transition: all 0.3s;
+	&:hover {
+		color: $font-color;
+		background-color: #414a52;
+	}
+	&:focus {
+		color: $font-color;
+		background-color: #414a52;
+	}
+	&:active {
+		color: $font-color;
+		background-color: #414a52;
+	}
+}
+.btn-custom.focus {
+	color: $font-color;
+	background-color: #414a52;
+}
+.btn-custom.active {
+	color: $font-color;
+	background-color: #414a52;
+}
+.btn-default {
+	text-transform: uppercase;
+	color: $font-color;
+	background-color: lighten($third-color, 20%);
+	border: 0;
+	padding: 14px 20px;
+	margin: 0;
+	font-size: 16px;
+	border-radius: 0;
+	margin-top: 20px;
+	transition: all 0.3s;
+	&:hover {
+		color: $font-color;
+		background-color: lighten($third-color, 5%);
+	}
+	&:focus {
+		color: $font-color;
+		background-color: lighten($third-color, 5%);
+	}
+	&:active {
+		color: $font-color;
+		background-color: lighten($third-color, 5%);
+	}
+}
+.btn-default.focus {
+	color: $font-color;
+	background-color: lighten($third-color, 5%);
+}
+.btn-default.active {
+	color: $font-color;
+	background-color: lighten($third-color, 5%);
+}

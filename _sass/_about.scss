@@ -1,0 +1,15 @@
+/* About Section */
+#about {
+	padding: 120px 0;
+	background: $first-color;
+	.about-text {
+		margin-left: 10px;
+	}
+	img {
+		float: right;
+	}
+	p {
+		margin-bottom: 30px;
+		line-height: 21px;
+	}
+}
