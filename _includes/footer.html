@@ -13,26 +13,17 @@
   <script type="text/javascript" src="assets/js/jqBootstrapValidation.js"></script> 
   <script type="text/javascript" src="assets/js/main.js"></script>
   <script type="text/javascript" src="assets/js/parallax.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.paroller.min.js"></script>
+  <script type="text/javascript" src="assets/js/wow.min.js"></script>
   <script>
    $(document).ready(function() {
     $('.parallax-window').parallax({
     naturalWidth: 600,
     naturalHeight: 400
     });
-
-   $(".image, [data-paroller-factor]").paroller({
-    factorXs: 0.1,
-    factorSm: 0.1,
-    factorMd: 0.4,
-    factorLg: 0.15,
-    factorXl: 0.15,
-    factor: 0.15,
-    type: 'foreground',     // background, foreground
-    direction: 'vertical', // vertical, horizontal
-    transition: 'transform 0.1s ease-in' // CSS transition
-  });
 });
+  </script>
+  <script>
+    new WOW().init();
   </script>
   </body>
   </html>

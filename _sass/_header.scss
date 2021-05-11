@@ -1,8 +1,9 @@
 /* Header Section */
 header {
+	height: 100vh;
 	.intro-text {
 		padding-top: 250px;
-		padding-bottom: 200px;
+		padding-bottom: 2000px;
 		}
 	.intro {
 		display: table;
@@ -12,10 +13,10 @@ header {
 		background: no-repeat center bottom;
 		background-attachment: fixed;
 		background-position: top;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
-		-o-background-size: cover;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		background-size: contain;
+		-o-background-size: contain;
 		h1 {
 			color: rgba(255,255,255,0.9);
 			font-size: 64px;
