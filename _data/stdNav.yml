@@ -1,0 +1,16 @@
+navs:
+- title: Home
+  url: /#page-top
+- title: About
+  url: /#about
+- title: portfolio
+  url: /#portfolio
+  subNav:
+   - title: Landscape
+     url: /portfolio/landscape
+- title: Contact
+  url: /#contact
+
+homeNavs:
+- title:
+  url:

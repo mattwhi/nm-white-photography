@@ -10,15 +10,17 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#page-top" class="page-scroll">Home</a></li>
-              <li><a href="#about" class="page-scroll">About</a></li>
-              <li><a href="#portfolio" class="page-scroll">Portfolio</a>
-                <ul>
-                <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-                <li><a href="#portfolio" class="page-scroll">Portfolio</a></li>
-              </ul>
+              {% for item in site.data.stdNav.navs %}
+              <li><a class="page-scroll {% if item.url == page.url %}active{% endif %}" href="{{ item.url }}">{{ item.title}}</a>
+                {% if item.subNav[0] %}
+                  <ul>
+                  {% for subItem in item.subNav %}
+                    <li><a class="page-scroll {% if subItem.url == page.url %}active{% endif %}" href="{{ subItem.url }}">{{ subItem.title}}</a></li>
+                  {% endfor %}
+                  </ul>
+                {% endif %}
               </li>
-              <li><a href="#contact" class="page-scroll">Contact</a></li>
+              {% endfor %}
             </ul>
           </div>
           <!-- /.navbar-collapse --> 
