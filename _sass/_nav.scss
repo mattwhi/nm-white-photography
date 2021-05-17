@@ -5,7 +5,7 @@
 	a.navbar-brand {
 		font-size: 20px;
 		color: $font-color;
-		font-weight: 500;
+		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		i.fa {
@@ -16,19 +16,42 @@
 	}
 }
 #menu.navbar-default {
+	border: none;
 	background-color: $nav-background;
-	border-color: rgba(231, 231, 231, 0);
 	.navbar-nav {
-		>li {
-			>a {
+		li {
+			a {
 				text-transform: uppercase;
 				color: darken($font-color, 20%);
 				font-size: 14px;
 				letter-spacing: 1px;
-				font-weight: 500;
+				font-weight: bold;
 				&:hover {
 					color: $font-color;
 				}
+			}
+			ul {
+				visibility: hidden;
+				opacity: 0;
+				position: absolute;
+				transition: all 0.5s ease;
+				padding-top: 20px;
+				li {
+					padding: 10px 15px;
+					background-color: $nav-background;
+					border-bottom: 1px solid $font-color;
+					&:hover {
+						background: lighten($second-color, 10%);
+					}
+				}
+				&:hover {
+					visibility: visible;
+				}
+			}
+			&:hover > ul {
+				visibility: visible;
+				opacity: 1;
+				display: block;
 			}
 		}
 	}
@@ -36,6 +59,14 @@
 .on {
 	background-color: darken($nav-background, 50%) !important;
 	padding: 0 !important;
+	ul {
+		li {
+			background: $second-color !important;
+			ul {
+				padding-top: 0 !important;
+			}
+		}
+	}
 }
 .navbar-default {
 	.navbar-nav {
