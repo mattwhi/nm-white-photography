@@ -8,6 +8,10 @@ navs:
   subNav:
    - title: Landscape
      url: /portfolio/landscape
+   - title: Urbex
+     url: /portfolio/urbex
+   - title: Wedding
+     url: /portfolio/wedding
 - title: Contact
   url: /#contact
 

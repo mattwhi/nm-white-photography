@@ -1,7 +1,6 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
-date:   2021-05-06 14:42:52 +0100
+title:  "Drone Photography"
+date:   2021-05-18 10:10:10 +0100
 categories: jekyll update
 except_separator: <!--More-->
 blogContent: Hello world

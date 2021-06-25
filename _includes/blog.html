@@ -1,0 +1,14 @@
+<!-- About Section -->
+<div id="blog">
+    <div class="container">
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <img src="{{page.baseurl}}assets/img/blog/{{page.mainImage}}" alt="{{page.mainImageAlt}}" />
+            <a href="{{ page.url }}">{{ page.title }}</a>
+            {{ page.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
