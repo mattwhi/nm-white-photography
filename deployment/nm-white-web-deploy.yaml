@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nm-white-web
+  labels:
+    app: nm-white-web
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: nm-white-web
+  template:
+    metadata:
+      labels:
+        app: nm-white-web
+    spec:
+      containers:
+        - name: nm-white-web
+          image: mattwhi/nm-white-photography:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
+            name: web
+            protocol: TCP
