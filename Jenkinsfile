@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://hub.docker.com/', 'dockerhub') {
+    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
 
         def customImage = docker.build("mattwhi/nm-white-photography")
 
