@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nm-white-web
+  namespace: default
   labels:
     app: nm-white-web
 spec:
