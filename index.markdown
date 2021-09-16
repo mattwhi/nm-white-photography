@@ -8,7 +8,7 @@ metaTitle: Photography | Website Design | Wakefield, West Yorkshire
 # Hero 
 
 heroTitle: NM White
-heroSubTitle: Photography • Awesome Website Designs
+heroSubTitle: Photography • Website Designs
 heroCta: Learn more
 
 # About
