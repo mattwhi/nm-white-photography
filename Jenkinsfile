@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('192.168.1.112', 'mwhite') {
+    docker.withRegistry('192.168.1.112', 'mattwhi') {
 
         def customImage = docker.build("mattwhi/nm-white-photography")
 
